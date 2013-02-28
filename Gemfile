@@ -4,8 +4,10 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
+  gem 'shotgun'
   gem 'rspec'
   gem 'guard-rspec'
+  gem 'rb-fsevent', '~> 0.9'
 end
 
 group :evaluations do
