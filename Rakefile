@@ -17,8 +17,8 @@ namespace :db do
     Sequel.extension :migration
 
     if ENV["TRAFFIC_SPY_ENV"] == "test"
-      @database = Sequel.sqlite database_file
       database_file = 'db/traffic_spy-test.sqlite3'
+      @database = Sequel.sqlite database_file
     else
       @database = Sequel.postgres "traffic_spy"
     end
