@@ -12,4 +12,7 @@ end
 
 group :evaluations do
   # THIS SPACE RESERVED FOR EVALUATIONS
+  gem 'cane'
+  gem 'reek'
+  gem 'rake'
 end
